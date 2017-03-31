@@ -15,13 +15,10 @@ class App extends React.Component {
 
     axios.get(url)
     .then(result => {
-    console.log(result.data.results);
-    console.log(result.data.results[0]);
-    console.log(result.data.results[0].title);
-    console.log(result.data.results[0].url);
+
     this.setState({
       News: {
-        "description": result.data
+        "description": result.data.results
       }
     })
   })
