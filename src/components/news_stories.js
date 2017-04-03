@@ -1,7 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { fetchNews } from '../actions/index';
 
 class NewsStories extends React.Component {
+  componentWillMount() {
+    console.log('this would be a good time to call an action creator');
+    this.props.fetchNews();
+  }
   render() {
     return (
       <div>
@@ -11,7 +17,10 @@ class NewsStories extends React.Component {
     );
   }
 }
-function mapStateToProps(state) {
-  return {news: state.news}
+// function mapStateToProps(state) {
+//   return {news: state.news}
+// }
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({ fetchNews }, dispatch);
 }
-export default connect(mapStateToProps)(NewsStories);
+export default connect(null, mapDispatchToProps)(NewsStories);
