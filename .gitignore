@@ -1,6 +1,8 @@
 /node_modules
 npm-debug.log
 bundle.js
+.gitattributes
+trying.js
 
 # Windows image file caches
 Thumbs.db
