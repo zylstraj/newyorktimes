@@ -7,6 +7,7 @@ class NewsStories extends React.Component {
   componentWillMount() {
     console.log('this would be a good time to call an action creator');
     this.props.fetchNews();
+    console.log(this.props)
   }
   render() {
     return (
@@ -17,10 +18,10 @@ class NewsStories extends React.Component {
     );
   }
 }
-// function mapStateToProps(state) {
-//   return {news: state.news}
-// }
+function mapStateToProps(state) {
+  return {news: state.news}
+}
 function mapDispatchToProps(dispatch) {
   return bindActionCreators({ fetchNews }, dispatch);
 }
-export default connect(null, mapDispatchToProps)(NewsStories);
+export default connect(mapStateToProps, mapDispatchToProps)(NewsStories);
