@@ -6,7 +6,7 @@ export default function(state = [], action) {;
     case FETCH_DATA:
     console.log(state)
     console.log(action.payload.data.results);
-  return state.concat(action.payload.data);
+  return state.concat(action.payload.data.results);
 }
 return state;
 }

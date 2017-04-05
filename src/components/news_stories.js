@@ -10,11 +10,24 @@ class NewsStories extends React.Component {
     this.props.fetchNews();
     console.log(this.props)
   }
+  createNewsList() {
+    return this.props.news.map((story) => {
+      return(
+        <li key={story.title}>
+        <h1>{story.title}</h1>
+        </li>
+      )
+    })
+  }
   render() {
+    console.log(this.props.news)
     return (
       <div>
         <h1>Title: </h1>
         <p>description</p>
+        <ul>
+        {this.createNewsList()}
+        </ul>
 
       </div>
     );
