@@ -14,7 +14,7 @@ class NewsStories extends React.Component {
       const url = story.url;
       return(
         <li key={story.title}>
-        <h1>Title: <a href={url}>{story.title}</a></h1>
+        <h1>Title: <a href={url} target="_blank">{story.title}</a></h1>
         </li>
       )
     })
