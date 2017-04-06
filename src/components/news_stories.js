@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchNews } from '../actions/index';
-import axios from 'axios';
 
 class NewsStories extends React.Component {
   componentDidMount() {
@@ -11,10 +10,11 @@ class NewsStories extends React.Component {
     console.log(this.props)
   }
   createNewsList() {
-    return this.props.news.map((story) => {
+    return this.props.news.slice(0,10).map((story) => {
+      const url = story.url;
       return(
         <li key={story.title}>
-        <h1>{story.title}</h1>
+        <h1>Title: <a href={url}>{story.title}</a></h1>
         </li>
       )
     })
@@ -23,8 +23,8 @@ class NewsStories extends React.Component {
     console.log(this.props.news)
     return (
       <div>
-        <h1>Title: </h1>
-        <p>description</p>
+        <h1>Top 10 Stories</h1>
+        <p>From The NY Times</p>
         <ul>
         {this.createNewsList()}
         </ul>
