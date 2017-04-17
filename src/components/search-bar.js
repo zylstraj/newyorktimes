@@ -27,6 +27,7 @@ class SearchBar extends React.Component {
     return (
       <div className={styles.weatherSearch}>
       <h1 className={styles.currentWeather}>Current Weather</h1>
+      <WeatherList />
       <form onSubmit={this.onFormSubmit} className={styles.input_group}>
         <input
         placeholder="Choose Your City"
@@ -37,7 +38,6 @@ class SearchBar extends React.Component {
         <br />
           <button type="submit" className={styles.buttonSubmit}>Submit</button>
         </form>
-        <WeatherList />
       </div>
     )
   }
