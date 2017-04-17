@@ -1,0 +1,32 @@
+.topTen {
+  width: 100%;
+  /*border: 2px solid #226666;
+  border-radius: 5px;*/
+}
+.h2_News a {
+  text-decoration: none;
+  color: #AA3939;
+}
+.h2_News a:visited {
+  color: #AA3939;
+}
+.h2_News a:hover {
+  color: #226666;
+}
+.li_News {
+  list-style-type: none;
+  font-size: .75em;
+  font-family: 'Playfair Display', serif;
+}
+header {
+  text-align: center;
+  color: #226666;
+  font-family: 'Playfair Display', serif;
+  font-size: 1em;
+}
+@media screen and (min-width: 650px) {
+.topTen {
+  width: 48%;
+  float: left;
+}
+}

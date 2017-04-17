@@ -1,0 +1,11 @@
+.cityList {
+  text-align: center;
+  border-bottom: 1px solid #FFAAAA;
+}
+
+.cityList p {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #226666;
+  font-size: 1.25em;
+}

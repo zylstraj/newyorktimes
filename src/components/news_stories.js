@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchNews } from '../actions/index';
+import styles from './news_stories.css';
 
 class NewsStories extends React.Component {
   componentDidMount() {
@@ -13,8 +14,8 @@ class NewsStories extends React.Component {
     return this.props.news.slice(0,10).map((story) => {
       const url = story.url;
       return(
-        <li key={story.title}>
-        <h1>Title: <a href={url} target="_blank">{story.title}</a></h1>
+        <li className={styles.li_News} key={story.title}>
+        <h2 className={styles.h2_News}><a href={url} target="_blank">{story.title}</a></h2>
         </li>
       )
     })
@@ -22,9 +23,11 @@ class NewsStories extends React.Component {
   render() {
     console.log(this.props.news)
     return (
-      <div>
+      <div className={styles.topTen}>
+      <header>
         <h1>Top 10 Stories</h1>
         <p>From The NY Times</p>
+        </header>
         <ul>
         {this.createNewsList()}
         </ul>

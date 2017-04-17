@@ -1,14 +1,16 @@
 import React from 'react';
 import NewsStories from './news_stories';
 import SearchBar from './search-bar';
-import WeatherList from './weather_list';
+import Header from './Header';
 
 const App = () => {
     return (
       <div>
+        <Header />
         <NewsStories />
+        <div>
         <SearchBar />
-        <WeatherList />
+        </div>
       </div>
   )
 }
