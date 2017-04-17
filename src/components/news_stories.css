@@ -18,11 +18,16 @@
   font-size: .75em;
   font-family: 'Playfair Display', serif;
 }
-header {
+.headerNews {
   text-align: center;
   color: #226666;
   font-family: 'Playfair Display', serif;
   font-size: 1em;
+}
+.currentWeather {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  color: #226666;
 }
 @media screen and (min-width: 650px) {
 .topTen {
