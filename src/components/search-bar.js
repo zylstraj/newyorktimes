@@ -26,17 +26,16 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div className={styles.weatherSearch}>
-
-      <form onSubmit={this.onFormSubmit} className="input-group">
+      <h1 className={styles.currentWeather}>Current Weather</h1>
+      <form onSubmit={this.onFormSubmit} className={styles.input_group}>
         <input
-        placeholder="Get a five-day forecast in your favorite cities"
-        className="form-control"
+        placeholder="Choose Your City"
+        className={styles.formWeather}
         value={this.state.term}
         onChange={this.onInputChange}
         />
-        <span className="input-group-btn">
-          <button type="submit" className="btn btn-secondary">Submit</button>
-        </span>
+        <br />
+          <button type="submit" className={styles.buttonSubmit}>Submit</button>
         </form>
         <WeatherList />
       </div>
