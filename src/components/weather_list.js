@@ -7,6 +7,7 @@ class WeatherList extends React.Component {
     console.log(cityData.list[0].main.temperature);
     return (
       <div key={cityData.city.name} className={styles.cityList}>
+      <h2>Today</h2>
       <p>{cityData.city.name}</p>
       <p>Temperature: {cityData.list[0].main.temp}</p>
       <p>Description: {cityData.list[0].weather[0].description}</p>
