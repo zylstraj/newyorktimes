@@ -2,6 +2,8 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchWeather } from '../actions/index';
+import WeatherList from './weather_list';
+import styles from './search_bar.css';
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -23,6 +25,8 @@ class SearchBar extends React.Component {
   }
   render() {
     return (
+      <div className={styles.weatherSearch}>
+
       <form onSubmit={this.onFormSubmit} className="input-group">
         <input
         placeholder="Get a five-day forecast in your favorite cities"
@@ -34,6 +38,8 @@ class SearchBar extends React.Component {
           <button type="submit" className="btn btn-secondary">Submit</button>
         </span>
         </form>
+        <WeatherList />
+      </div>
     )
   }
 }

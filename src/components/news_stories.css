@@ -1,0 +1,25 @@
+.topTen {
+  width: 100%;
+}
+.h1_News a {
+  text-decoration: none;
+  color: black;
+}
+.h1_News a:visited {
+  color: black;
+}
+.h1_News a:hover {
+  color: black;
+}
+.li_News {
+  list-style-type: none;
+  font-size: .75em;
+  font-family: monospace;
+}
+
+@media screen and (min-width: 650px) {
+.topTen {
+  width: 50%;
+  float: left;
+}
+}

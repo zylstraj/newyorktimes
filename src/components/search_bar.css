@@ -1,0 +1,9 @@
+.weatherSearch {
+  width: 100%;
+}
+@media screen and (min-width: 650px) {
+.weatherSearch {
+  width: 50%;
+  float: right;
+}
+}

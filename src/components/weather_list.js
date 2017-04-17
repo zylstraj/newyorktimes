@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import styles from './weather_list.css';
 
 class WeatherList extends React.Component {
   renderWeather(cityData) {
