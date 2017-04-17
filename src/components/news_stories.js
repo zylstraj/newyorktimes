@@ -25,8 +25,8 @@ class NewsStories extends React.Component {
     return (
       <div className={styles.topTen}>
       <header>
-        <h1>Top 10 Stories</h1>
-        <p>From The NY Times</p>
+        <h1 className={styles.currentWeather}>Top 10 Stories</h1>
+        <p className={styles.headerNews}>From The NY Times</p>
         </header>
         <ul>
         {this.createNewsList()}

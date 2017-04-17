@@ -1,11 +1,23 @@
 .cityList {
   text-align: center;
-  border-bottom: 1px solid #FFAAAA;
 }
 
-.cityList p {
+.cityInfo, h3 {
   text-align: center;
   font-family: 'Playfair Display', serif;
   color: #226666;
-  font-size: 1.25em;
+  font-size: 1em;
+}
+.cityToday {
+  width: 50%;
+  float: left;
+}
+.cityTomorrow {
+  width: 50%;
+  float: right;
+}
+.cityName {
+  font-family: 'Playfair Display', serif;
+  color: #AA3939;
+  font-size: 1em;
 }
