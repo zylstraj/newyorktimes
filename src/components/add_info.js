@@ -5,6 +5,21 @@ import React from 'react';
 //     <h1>Fun Times</h1>
 //   )
 // }
+
+function UserGreeting(props) {
+  return <h1>Welcome back!</h1>;
+}
+function GuestGreeting(props) {
+  return <h1>Please sign up.</h1>;
+}
+function Greeting(props) {
+  const isLoggedIn = props.isLoggedIn;
+  if (isLoggedIn) {
+    return <UserGreeting />;
+  }
+  return <GuestGreeting />;
+}
+
 class AddInfo extends React.Component {
   constructor(props) {
     super(props);
@@ -37,6 +52,7 @@ class AddInfo extends React.Component {
   render() {
     return (
       <div>
+      <Greeting isLoggedIn={true} />
       <h1 onClick={this.actionMove}>Fun Times</h1>
       <p onClick={this.betterDays}>I hate being alone</p>
       <p onClick={this.changeThings}>Fomo is real</p>
