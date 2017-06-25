@@ -4,6 +4,7 @@ import SearchBar from './search-bar';
 import Header from './Header';
 import styles from './app.css';
 import AddInfo from './add_info';
+import DoubleDay from './doubleday';
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
         <NewsStories />
         <div>
         <AddInfo />
+        <DoubleDay />
         </div>
       </div>
   )
