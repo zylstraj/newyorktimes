@@ -9,16 +9,37 @@ class AddInfo extends React.Component {
   constructor(props) {
     super(props);
     this.actionMove = this.actionMove.bind(this);
+    this.changeThings = this.changeThings.bind(this);
+    this.state = {
+      fun: true
+    }
   }
+  //Binding this important when dealing with state
   actionMove() {
     console.log("fun times");
+  }
+  betterDays() {
+    console.log("oh no, it's not working. better days will come!")
+  }
+  changeThings() {
+    console.log(this.state)
+    if(this.state == true) {
+      this.setState({
+        fun: false
+      })
+    }
+    if(this.state == false) {
+      this.setState({
+        fun: true
+      })
+    }
   }
   render() {
     return (
       <div>
       <h1 onClick={this.actionMove}>Fun Times</h1>
-      <p>I hate being alone</p>
-      <p>Fomo is real</p>
+      <p onClick={this.betterDays}>I hate being alone</p>
+      <p onClick={this.changeThings}>Fomo is real</p>
       <p>I love complaining</p>
       </div>
     )
