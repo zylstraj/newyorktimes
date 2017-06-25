@@ -5,6 +5,7 @@ import Header from './Header';
 import styles from './app.css';
 import AddInfo from './add_info';
 import DoubleDay from './doubleday';
+import LoginControl from './login';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
         <div>
         <AddInfo />
         <DoubleDay />
+        <LoginControl />
         </div>
       </div>
   )
