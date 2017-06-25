@@ -3,6 +3,7 @@ import NewsStories from './news_stories';
 import SearchBar from './search-bar';
 import Header from './Header';
 import styles from './app.css';
+import AddInfo from './add_info';
 
 const App = () => {
     return (
@@ -12,6 +13,9 @@ const App = () => {
         <SearchBar />
         </div>
         <NewsStories />
+        <div>
+        <AddInfo />
+        </div>
       </div>
   )
 }
