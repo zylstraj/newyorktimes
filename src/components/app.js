@@ -6,6 +6,7 @@ import styles from './app.css';
 import AddInfo from './add_info';
 import DoubleDay from './doubleday';
 import LoginControl from './login';
+import Horsing from './horsingAround';
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
         <AddInfo />
         <DoubleDay />
         <LoginControl />
+        <Horsing />
         </div>
       </div>
   )
