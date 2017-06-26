@@ -1,4 +1,6 @@
 import React from 'react';
+import People from './loginBaby';
+import Greeting from './dp';
 
 class Horsing extends React.Component {
   constructor(props) {
@@ -8,6 +10,12 @@ class Horsing extends React.Component {
     }
   }
   render() {
+    let element = null;
+    if (this.state = "Penguins") {
+      element = <People />
+    } else {
+      element = <Greeting />
+    }
     return (
       <div>
         <h1>These are my horses</h1>
@@ -16,6 +24,7 @@ class Horsing extends React.Component {
         // JSX comments
       }
         <p>{this.state.horses}</p>
+        { element }
       </div>
     )
   }
