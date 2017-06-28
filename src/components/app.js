@@ -7,6 +7,7 @@ import AddInfo from './add_info';
 import DoubleDay from './doubleday';
 import LoginControl from './login';
 import Horsing from './horsingAround';
+import Diplo from './situations';
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
         <DoubleDay />
         <LoginControl />
         <Horsing />
+        <Diplo isLoggedIn="false" />
         </div>
       </div>
   )
