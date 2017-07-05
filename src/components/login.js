@@ -24,8 +24,8 @@ class LoginControl extends React.Component {
   render() {
     return(
       <div>
-        <p onClick={this.handleLogout}>Info</p>
-        <p onClick={this.handleLogin}>Okay</p>
+        <p onClick={this.handleLogout}>Info for the people</p>
+        <p onClick={this.handleLogin}>Okay Adding more information</p>
       </div>
     )
 
