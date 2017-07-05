@@ -8,6 +8,7 @@ import DoubleDay from './doubleday';
 import LoginControl from './login';
 import Horsing from './horsingAround';
 import Diplo from './situations';
+import Boyfriend from './boyfriends';
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
         <LoginControl />
         <Horsing />
         <Diplo isLoggedIn="false" />
+        <Boyfriend />
         </div>
       </div>
   )
