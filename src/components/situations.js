@@ -1,13 +1,14 @@
 import React from 'react';
-import People from './login';
+import People from './loginBaby';
 import Greeting from './dp';
 
 function Diplo(props) {
   const isLoggedIn = props.isLoggedIn;
-  if(isLoggedIn) {
-    return <People />
+  console.log(isLoggedIn)
+  if(isLoggedIn == true) {
+    return <People direction="North" />
   } else {
-    return <Greeting />
+    return <Greeting direction="South" />
   }
 }
-export default Diplo
+export default Diplo;

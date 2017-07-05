@@ -23,7 +23,7 @@ const App = () => {
         <DoubleDay />
         <LoginControl />
         <Horsing />
-        <Diplo isLoggedIn="false" />
+        <Diplo isLoggedIn={false} />
         <Boyfriend />
         </div>
       </div>
