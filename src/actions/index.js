@@ -26,3 +26,13 @@ export function fetchWeather(city) {
      payload: request
    }
  }
+
+export const LEARN_STUFF = 'LEARN_STUFF';
+
+export function learningStuff(info) {
+  console.log(info);
+  return {
+    type: LEARN_STUFF,
+    payload: info
+  }
+}
