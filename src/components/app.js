@@ -19,12 +19,6 @@ const App = () => {
         </div>
         <NewsStories />
         <div>
-        <AddInfo />
-        <DoubleDay />
-        <LoginControl />
-        <Horsing />
-        <Diplo isLoggedIn={false} />
-        <Boyfriend />
         </div>
       </div>
   )
