@@ -14,17 +14,9 @@ const App = () => {
     return (
       <div>
         <Header />
-        <div>
-        <SearchBar />
-        </div>
         <NewsStories />
         <div>
-        <AddInfo />
-        <DoubleDay />
-        <LoginControl />
-        <Horsing />
-        <Diplo isLoggedIn={false} />
-        <Boyfriend />
+        <SearchBar />
         </div>
       </div>
   )

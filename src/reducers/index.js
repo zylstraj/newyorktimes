@@ -5,7 +5,6 @@ import LearningReducer from './learning';
 
 const rootReducer = combineReducers({
   news: NewsReducer,
-  weather: WeatherReducer,
-  learning: LearningReducer
+  weather: WeatherReducer
 });
 export default rootReducer;
