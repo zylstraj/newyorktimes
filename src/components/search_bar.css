@@ -38,7 +38,7 @@ input {
 @media screen and (min-width: 650px) {
 .weatherSearch {
   width: 48%;
-  float: left;
+  float: right;
   margin-top: auto;
 }
 }

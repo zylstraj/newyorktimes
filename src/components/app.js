@@ -14,11 +14,9 @@ const App = () => {
     return (
       <div>
         <Header />
-        <div>
-        <SearchBar />
-        </div>
         <NewsStories />
         <div>
+        <SearchBar />
         </div>
       </div>
   )
